@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>ROME</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.jpeg">
+  <script>
+    // If opened from home screen icon, go straight to the site
+    if (window.navigator.standalone === true) {
+      window.location.replace("https://romeintel.com/");
+    }
+  </script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,19 +29,7 @@
       border-radius: 28px;
       object-fit: cover;
     }
-    h1 {
-      color: #c9a84c;
-      font-size: 22px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-    }
-    p {
-      color: #888;
-      font-size: 13px;
-      text-align: center;
-      line-height: 1.6;
-      padding: 0 40px;
-    }
+    h1 { color: #c9a84c; font-size: 22px; font-weight: 600; letter-spacing: 0.1em; }
     .instructions {
       background: #111;
       border: 1px solid #333;
