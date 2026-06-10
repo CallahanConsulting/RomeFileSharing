@@ -6,7 +6,6 @@
   <title>ROME</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.jpeg">
   <script>
-    // If opened from home screen icon, go straight to the site
     if (window.navigator.standalone === true) {
       window.location.replace("https://romeintel.com/");
     }
@@ -22,6 +21,7 @@
       min-height: 100vh;
       font-family: -apple-system, sans-serif;
       gap: 28px;
+      padding: 24px;
     }
     img {
       width: 140px;
@@ -37,12 +37,13 @@
       padding: 16px 20px;
       color: #aaa;
       font-size: 13px;
-      line-height: 1.8;
+      line-height: 2;
       text-align: left;
-      width: calc(100% - 48px);
+      width: 100%;
       max-width: 320px;
     }
-    .instructions span { color: #c9a84c; }
+    .instructions span { color: #c9a84c; font-weight: 600; }
+    .instructions .step-last { color: #fff; }
     a.btn {
       display: block;
       background: #c9a84c;
@@ -60,10 +61,10 @@
   <img src="apple-touch-icon.jpeg" alt="ROME Logo">
   <h1>ROME</h1>
   <div class="instructions">
-    To add to your home screen:<br>
     1. Tap <span>Share ↑</span> at the bottom<br>
     2. Tap <span>Add to Home Screen</span><br>
-    3. Tap <span>Add</span>
+    3. Tap <span>Add</span><br>
+    4. <span class="step-last">Go to your Home Screen — the ROME icon is ready! 🏛️</span>
   </div>
   <a class="btn" href="https://romeintel.com/">Open ROME →</a>
 </body>
